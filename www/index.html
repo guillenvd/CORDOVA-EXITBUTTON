@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>CORDOVA EXIT BUTTON</title>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>      
+        <script type="text/javascript" charset="utf-8">
+
+            function onLoad()
+            {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+            }
+
+            function exitFromApp()
+             {
+                navigator.app.exitApp();
+             }
+
+        </script>
+
+    </head>
+
+    <body onload="onLoad();">
+       <button name="buttonClick" onclick="exitFromApp()">Click Me!</button>
+    </body>
+</html>
